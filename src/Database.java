@@ -70,6 +70,7 @@ public class Database {
             PreparedStatement preparedStatement = connection.prepareStatement(query)){
             preparedStatement.setInt(1, carNumber);
             affectedRows = preparedStatement.executeUpdate();
+            System.out.println("Car with number " + carNumber + " deleted successfully");
         }catch (SQLException e) {
             System.out.println(e.getMessage());
         }
@@ -88,6 +89,7 @@ public class Database {
             preparedStatement.setInt(2, carNumber);
 
             affectedRows = preparedStatement.executeUpdate();
+            System.out.println("Car's color updated successfully");
 
         } catch (SQLException ex) {
             System.out.println(ex.getMessage());

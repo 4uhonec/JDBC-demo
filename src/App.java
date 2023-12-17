@@ -18,6 +18,7 @@ public class App {
 
         Car car = new Car(UUID.randomUUID(), 123456, 1.8, "blue metallic", "mazda 3");
         database.insertCar(car);
+        System.out.println(database.getCarByNumber(123456));
 
     }
 }

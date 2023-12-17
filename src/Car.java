@@ -57,4 +57,14 @@ public class Car {
     public void setModel(String model) {
         this.model = model;
     }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "carNumber=" + carNumber +
+                ", motorVolume=" + motorVolume +
+                ", color='" + color + '\'' +
+                ", model='" + model + '\'' +
+                '}';
+    }
 }
