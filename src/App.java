@@ -21,5 +21,7 @@ public class App {
         System.out.println(database.getCarByNumber(123456));*/
 
         //database.deleteCarByCarNumber(123456);
+        //int affectedRows = database.updateCarColor(123456, "white");
+        //System.out.println(database.getCarByNumber(123456));
     }
 }
