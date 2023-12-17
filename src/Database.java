@@ -45,6 +45,7 @@ public class Database {
             PreparedStatement preparedStatement = connection.prepareStatement(query)){
             preparedStatement.setInt(1, carNumber);
             try(ResultSet resultSet = preparedStatement.executeQuery()){
+                //set result set cursor to the first row of received data table
                 resultSet.next();
                 UUID id = resultSet.getObject(1, java.util.UUID.class);
                 double motorVolume = resultSet.getDouble(3);

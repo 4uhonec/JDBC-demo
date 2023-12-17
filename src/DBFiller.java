@@ -24,7 +24,7 @@ public class DBFiller {
         }
     }
 
-    public void fillCarsTable(){//todo finish fillTable method
+    public void fillCarsTable(){
         ArrayList<Car> carList = createCarList();
         String query = "INSERT INTO cars (id, car_number, motor_volume, color, model) VALUES (?,?,?,?,?);";
         //try-with-resources, Connection and PreparedStatement objects will auto close when try block ends
