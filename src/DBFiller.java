@@ -65,7 +65,7 @@ public class DBFiller {
     private ArrayList<Car> createCarList(){
         ArrayList<Car> carList = new ArrayList<>();
 
-        //our table 
+        //filling our car list to insert into car table
         for(int i = 0; i<50; i++){
             Car car = new Car(UUID.randomUUID(),
                     random.nextInt(9000000) + 1000000,
