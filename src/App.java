@@ -20,5 +20,6 @@ public class App {
         database.insertCar(car);
         System.out.println(database.getCarByNumber(123456));*/
 
+        //database.deleteCarByCarNumber(123456);
     }
 }
